@@ -17,6 +17,6 @@ public:
 
 private:
 	UPROPERTY(EditAnywhere, Category = "Moving")
-		float Speed;
+	float Speed;
 };
 
