@@ -16,5 +16,6 @@ class OSS_API ICMenuInterface
 
 public:
 	virtual void Host() = 0;
-	virtual void Join(const FString InAddress) = 0;
+	virtual void Join(const FString& InAddress) = 0;
+	virtual void OpenMainMenuLevel() = 0;
 };

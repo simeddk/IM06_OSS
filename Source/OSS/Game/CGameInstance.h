@@ -23,10 +23,17 @@ public:
 	UFUNCTION(Exec)
 	void Join(const FString& InAddress) override;
 
+	virtual void OpenMainMenuLevel() override;
+
 	UFUNCTION(BlueprintCallable, Exec)
 	void LoadMainMenu();
+
+	UFUNCTION(BlueprintCallable, Exec)
+	void LoadPauseMenu();
 
 private:
 	TSubclassOf<UUserWidget> MainMenuClass;
 	UCMainMenu* MainMenu;
+
+	TSubclassOf<UUserWidget> PauseMenuClass;
 };
